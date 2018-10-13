@@ -1,0 +1,60 @@
+************
+System Setup
+************
+
+Introduction
+============
+
+TODO
+
+I am mainly using a Mac but you should be able to adapt most examples to your
+operating system of choice.
+
+Domain
+======
+
+I registered the ``weatherballoon.info`` domain for the purposes of hosting
+APIs, sites etc.
+
+Azure
+=====
+
+TODO
+
+Azure DevOps
+============
+
+Not long after I started piecing this project together, `Microsoft announced
+Azure DevOps
+<https://azure.microsoft.com/en-au/blog/introducing-azure-devops/>`_. I had
+setup the initial code in GitHub but thought I might as well go for a body of
+work that attempts to entirely use Azure-based resources. I have used Visual
+Studio Team Services for a while but limitations around no public repositories
+meant it didn't fit well with the approach I wanted to take here.
+
+To start, I created the `weatherballoon organisation
+<https://dev.azure.com/weatherballoon/>`_ in Azure DevOps. 
+
+A single project is likely all I'll need for this work so I created the `Weather
+Balloon <https://dev.azure.com/weatherballoon/Weather%20Balloon>`_ project to
+house the various Git repositories, pipelines and planning boards that I'll use.
+
+SSH Key
+-------
+
+Generate a new SSH key::
+
+    ssh-keygen -C <YOUR EMAIL> -f ~/.ssh/weatherballoon
+
+The public key is then added to your `SSH Public Keys
+<https://dev.azure.com/weatherballoon/_usersSettings/keys>`_ in your Azure
+DevOps user settings. I grab this using the ``pbcopy`` tool::
+
+    cat ~/.ssh/weatherballoon.pub |pbcopy
+
+IDE
+===
+
+I'm using `Microsoft Visual Studio Code <https://code.visualstudio.com/>`_ as my
+code editor. It's at version ``1.27.x`` at the time I write this but the product
+is frequently updated so anything beyond that version should be fine.
