@@ -1,6 +1,6 @@
-============
+############
 Introduction
-============
+############
 
 Welcome to the Weather Balloon Project!
 
@@ -8,8 +8,21 @@ TODO: Describe the project
 
 TODO: Describe the approach
 
+Problem domain
+==============
+
+Measurements
+------------
+
+
+
+Forecast vs Observation
+-----------------------
+
+
+
 Credits
--------
+=======
 
 A number of third-party resources are utilised throughout this project and are
 attributed below:

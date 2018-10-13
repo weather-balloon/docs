@@ -52,6 +52,15 @@ DevOps user settings. I grab this using the ``pbcopy`` tool::
 
     cat ~/.ssh/weatherballoon.pub |pbcopy
 
+Add an entry to ``~/.ssh/config/``::
+
+    Host ssh.dev.azure.com
+        HostName ssh.dev.azure.com
+        IdentityFile ~/.ssh/weatherballoon
+
+For more information around using SSH with Azure DevOps code repositories, refer
+to the `How-to guide <https://docs.microsoft.com/en-gb/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=vsts>`_.
+
 IDE
 ===
 
