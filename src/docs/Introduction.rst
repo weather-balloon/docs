@@ -6,20 +6,14 @@ Welcome to the Weather Balloon Project!
 
 TODO: Describe the project
 
+.. uml:: diagrams/introduction/usecase.puml
+
 TODO: Describe the approach
 
 Problem domain
 ==============
 
-Measurements
-------------
-
-
-
-Forecast vs Observation
------------------------
-
-
+I undertook research into applicable measurements and documented them in :ref:`Observations and their measurement`.
 
 Credits
 =======

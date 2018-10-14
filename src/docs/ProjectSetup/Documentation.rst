@@ -23,3 +23,20 @@ Visual Studio Extensions
 * `PlantUML <https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml>`_
 * `Jupyter <https://github.com/DonJayamanne/vscodejupyter/wiki>`_
 
+Jupyter Notebooks
+-----------------
+
+Note that the Jupyter VSCode plugin is useful for viewing previews of a Jupyter
+Notebook but it's easier to work on Notebooks in the browser. Just activate the
+virtual environment and run ``make jupyter`` to start Jupyter.
+
+I'd suggest installing the `Unofficial Jupyter Notebooks Extensions
+<https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/index.html>`_ as
+it provides a set of really useful tools such as ``Table of Contents 2``. The
+``requirements.txt`` file already installs the library but you may need to run
+the following in your virtual environment::
+
+    jupyter contrib nbextension install --sys-prefix
+    jupyter nbextensions_configurator enable --sys-prefix
+
+

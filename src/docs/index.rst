@@ -8,9 +8,9 @@ Weather Balloon documentation
 
     Introduction
     ProjectSetup
-    Notebooks
     Feature1
     Feature2
+    Notebooks
 
 Indices and tables
 ==================

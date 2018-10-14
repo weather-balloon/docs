@@ -28,22 +28,36 @@ We're likely to be able to determine the user's location via either :
 - Asking the user to enter their postcode or town
 - Asking the user to click on a map (e.g. to select a station or area)
 
-Weather station location
-------------------------
-
-Various weather agencies list their station details - e.g.:
-
-* `Australian BoM <http://www.bom.gov.au/climate/data/stations/>`_
-* `UK Met Office <https://www.metoffice.gov.uk/public/weather/climate-network/#?tab=climateNetwork>`_
-
-These will have the GPS co-ordinate of the station.
-
 Data sources
-============
+------------
 
+The :ref:`Getting a web user’s location` notebook provides analysis of the data sources.
 
+Post codes
+    For this work I will use `postcodes from GeoNames <http://download.geonames.org/export/zip/>`_.
+
+Weather station location
+    Various weather agencies list their station details - e.g.:
+
+    * `Australian BoM <http://www.bom.gov.au/climate/data/stations/>`_
+    * `UK Met Office <https://www.metoffice.gov.uk/public/weather/climate-network/#?tab=climateNetwork>`_
+
+    These will have the GPS co-ordinate of the station.
+
+    For this work I will use the `BoM's list <ftp://ftp.bom.gov.au/anon2/home/ncc/metadata/sitelists/stations.zip>`_.
 
 Design
 ======
 
+Loading Postcodes
+-----------------
+
 .. uml:: diagrams/feature1/postcode_seq.puml
+
+Loading Weather stations
+------------------------
+
+.. uml:: diagrams/feature1/weatherstations_seq.puml
+
+Implementation
+==============

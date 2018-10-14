@@ -1,10 +1,11 @@
-#########
-Notebooks
-#########
+###################
+Appendix: Notebooks
+###################
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
     :caption: Table of Contents
 
     notebooks/Observed_Variables.ipynb
-    notebooks/AU_BOM.ipynb
+    notebooks/AU BoM Data.ipynb
+    notebooks/Web user location.ipynb

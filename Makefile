@@ -20,6 +20,9 @@ help:
 #publish:
 #	@$(SPHINXBUILD) -b html -a "$(SOURCEDIR)" docs/
 
+jupyter:
+	jupyter notebook
+
 autobuild:
 	@$(SPHINXAUTOBUILD) $(SPHINXAUTOBUILDOPTS) "$(SOURCEDIR)" "$(BUILDDIR)"
 

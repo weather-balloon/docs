@@ -2,3 +2,5 @@ build/
 _build/
 venv/
 .vscode/settings.json
+.ipynb_checkpoints
+src/docs/notebooks/data

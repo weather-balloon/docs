@@ -1,0 +1,23 @@
+@startuml Feature 1 - Weather Stations Overview
+actor Operator
+control LogicApp_Loader
+collections BoM
+database BlobStore
+actor EventGrid
+control LogicApp_SearchLoader
+control FunctionApp_CsvParser
+boundary AzureSearch
+
+Operator --> LogicApp_Loader: Trigger
+LogicApp_Loader -> GeoNames: Request postcode file
+GeoNames -> LogicApp_Loader: Return zip file
+LogicApp_Loader -> LogicApp_Loader: Unzip file
+LogicApp_Loader -> BlobStore: Store CSV file
+
+BlobStore --> EventGrid: New item trigger
+EventGrid -> LogicApp_SearchLoader: Trigger
+LogicApp_SearchLoader -> FunctionApp_CsvParser: Post CSV
+FunctionApp_CsvParser -> FunctionApp_CsvParser: Parse CSV
+FunctionApp_CsvParser -> LogicApp_SearchLoader: JSON Records
+LogicApp_SearchLoader -> AzureSearch: Load entries
+@enduml
