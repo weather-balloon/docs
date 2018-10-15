@@ -46,18 +46,49 @@ Weather station location
 
     For this work I will use the `BoM's list <ftp://ftp.bom.gov.au/anon2/home/ncc/metadata/sitelists/stations.zip>`_.
 
-Design
-======
+
+
 
 Loading Postcodes
------------------
+=================
+
+Design
+------
 
 .. uml:: diagrams/feature1/postcode_seq.puml
 
+Implementation
+--------------
+
+Azure Function: CsvToJson
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unfortunately, LogicApps doesn't have a CSV parser (!) so I'll create a basic
+Azure Function in C#. The function will accept HTTP POST requests with the CSV
+text in the request body. I'll assume that the CSV has a header row but you can
+pass ``header=0`` in the query string to disable this.
+
+You can access the `Source
+code <https://dev.azure.com/weatherballoon/Weather%20Balloon/_git/function-parse-csv>`_
+under the DevOps project and try out the code locally.
+
+This will be the first Azure Function created so let's spend some time setting
+up our environment:
+
+#. First of all, install the `Azure Functions extension`_ for Visual Studio Code.
+#. The `extension's documentation`_ provides the follow-up steps for configuring your system to run functions  locally.
+
+.. _Azure Functions extension: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
+
+.. _extension's documentation: https://code.visualstudio.com/tutorials/functions-extension/getting-started
+
 Loading Weather stations
-------------------------
+========================
+
+Design
+------
 
 .. uml:: diagrams/feature1/weatherstations_seq.puml
 
 Implementation
-==============
+--------------

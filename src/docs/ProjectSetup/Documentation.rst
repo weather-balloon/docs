@@ -9,7 +9,7 @@ You can access the source code in the `Weather Balloon
 find the guide for building the documentation in the ``README.md`` file.
 
 Conventions
------------
+===========
 
 I use various diagrams to help illustrate various concepts. Most of the "formal"
 diagrams are based in UML but I'm by no means a UML expert so please let me
@@ -17,14 +17,20 @@ know if I've slipped up. I reference the `Sparx Systems UML Tutorial
 <https://www.sparxsystems.com.au/resources/uml2_tutorial/>`_ to guide me.
 
 Visual Studio Extensions
-------------------------
+========================
 
-* `reStructuredText <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
-* `PlantUML <https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml>`_
-* `Jupyter <https://github.com/DonJayamanne/vscodejupyter/wiki>`_
+`PlantUML <https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml>`_
+    PlantUML diagram previews and handy file editing features
+
+`Jupyter <https://github.com/DonJayamanne/vscodejupyter/wiki>`_
+    Lets you preview Jupyter notebooks
+
+`reStructuredText
+<https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
+    Provides RST file handling but I'm struggling to get the preview to work
 
 Jupyter Notebooks
------------------
+=================
 
 Note that the Jupyter VSCode plugin is useful for viewing previews of a Jupyter
 Notebook but it's easier to work on Notebooks in the browser. Just activate the

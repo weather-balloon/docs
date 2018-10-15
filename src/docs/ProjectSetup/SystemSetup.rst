@@ -67,3 +67,27 @@ IDE
 I'm using `Microsoft Visual Studio Code <https://code.visualstudio.com/>`_ as my
 code editor. It's at version ``1.27.x`` at the time I write this but the product
 is frequently updated so anything beyond that version should be fine.
+
+Languages and SDKs
+==================
+
+Python 3.7+
+    `Python Downloads <https://www.python.org/downloads/>`_
+
+.NET Core SDK 2.1+
+    `.NET Core SDK <https://www.microsoft.com/net/download>`_
+
+Node.js 10+ (includes ``npm``)
+    `Node Downloads <https://nodejs.org/en/download/current/>`_
+
+You're likely to find that your platform's package manager gives you a
+straight-forward way to do most of this. I use `Homebrew <https://brew.sh/>`_ on
+my OS X system.
+
+Tools
+=====
+
+* `Azure Storage Explorer
+<https://azure.microsoft.com/en-au/features/storage-explorer/>`_
+
+Microsoft also provides a variety of `Azure Developer Tools <https://azure.microsoft.com/en-au/tools/>`_ that are worth checking out.
