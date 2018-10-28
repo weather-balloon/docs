@@ -19,7 +19,40 @@ APIs, sites etc.
 Azure
 =====
 
-TODO
+Install the `Azure CLI
+<https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest>`_
+
+To access your Azure subscription, just run::
+
+    az login
+
+If you have multiple subscriptions, set the CLI to the appropriate one using::
+
+    az account set --subscription "<SUBSCRIPTION NAME>"
+
+Once you've logged in, setup a central (management) resource group:
+
+    az group create --location australiaeast --name wb-management
+
+This central resource group will house resources that won't be deployed via
+pipelines. For the most part, these are static resources that will only be
+deployed once and primarily managed manually.
+
+    az storage account create --resource-group wb-management \
+                            --name wbmanagement \
+                            --sku Standard_LRS \
+                            --https-only \
+                            --kind StorageV2
+
+A user-assigned managed identity will be created as I'll use it over a number of
+services. 
+
+To create the managed identity::
+
+    az identity create --resource-group wb-management --name weatherballoon
+
+TODO: Add Log Analytics workspace
+
 
 Azure DevOps
 ============
