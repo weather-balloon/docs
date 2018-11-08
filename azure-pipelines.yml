@@ -27,5 +27,5 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact: dist'
   inputs:
-    pathtoPublish: 'build/html'
+    pathtoPublish: 'build/docs/html'
     artifactName: 'website'
