@@ -23,3 +23,9 @@ steps:
     make html
   condition: succeededOrFailed()
   displayName: 'Make HTML'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact: dist'
+  inputs:
+    pathtoPublish: 'build/html'
+    artifactName: 'website'
