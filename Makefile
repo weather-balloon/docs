@@ -9,24 +9,25 @@ SOURCEDIR     = src/docs/
 BUILDDIR      = build/docs/
 
 # Put it first so that "make" without argument is like "make help".
-help:
+help :
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help Makefile 
 
-#serve-docs:
-#	cd build/docs; python -m http.server 4444;
-
-#publish:
-#	@$(SPHINXBUILD) -b html -a "$(SOURCEDIR)" docs/
-
-jupyter:
+jupyter :
 	jupyter notebook
 
-autobuild:
+autobuild :
 	@$(SPHINXAUTOBUILD) $(SPHINXAUTOBUILDOPTS) "$(SOURCEDIR)" "$(BUILDDIR)"
+
+publish : clean html epub latexpdf
+	@$(SPHINXBUILD)  -b html epub latexpdf -a "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+clean-local :
+	rm -rf _build/
+	

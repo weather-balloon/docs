@@ -5,6 +5,7 @@ This repository conatins the the documentation for the Weather Balloon project.
 To prepare your environment to build the documentation you'll need a few pre-requisites::
 
     brew install python3 graphviz plantuml pandoc
+    brew cask install mactex
 
 A Python VirtualEnv is then setup for the requirements::
 

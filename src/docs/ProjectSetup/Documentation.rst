@@ -20,14 +20,21 @@ Visual Studio Extensions
 ========================
 
 `PlantUML <https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml>`_
+    
     PlantUML diagram previews and handy file editing features
 
 `Jupyter <https://github.com/DonJayamanne/vscodejupyter/wiki>`_
+    
     Lets you preview Jupyter notebooks
 
-`reStructuredText
-<https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
+`reStructuredText <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
+    
     Provides RST file handling but I'm struggling to get the preview to work
+
+`Anaconda Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-python.anaconda-extension-pack>`_
+
+    TODO
+
 
 Jupyter Notebooks
 =================
@@ -46,3 +53,11 @@ the following in your virtual environment::
     jupyter nbextensions_configurator enable --sys-prefix
 
 
+Deployment
+==========
+
+The documentation is deployed to http://www.weatherballoon.info using an Azure
+DevOps pipeline.
+
+.. literalinclude:: ../../azure-pipelines.yml
+    :language: yaml
