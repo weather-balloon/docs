@@ -4,6 +4,7 @@ left to right direction
 title Use case for Weather Balloon
 actor User
 rectangle "Weather Balloon" {
+    User -> (Find local weather station)
     User -> (View local weather observations)
     User -> (View local weather forecasts)
     User -> (View historic weather observations)

@@ -8,8 +8,7 @@ Weather Balloon documentation
 
     Introduction
     ProjectSetup
-    Feature1
-    Feature2
+    Epic1
     Notebooks
 
 Indices and tables

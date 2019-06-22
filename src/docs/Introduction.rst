@@ -4,16 +4,41 @@ Introduction
 
 Welcome to the Weather Balloon Project!
 
-TODO: Describe the project
+This project provides a demonstration of Azure in DevOps project. 
+I'm creating it as part of my study for the 
+`AZ-203: Developing Solutions for Microsoft Azure <https://www.microsoft.com/en-us/learning/exam-AZ-203.aspx>`_
+and `AZ-400: Microsoft Azure DevOps Solutions <https://www.microsoft.com/en-us/learning/azure-devops.aspx#cert-expansion-tab-exam-az-400>`_ exams
+
+Use Case
+========
+
+The Weather Balloon site will focus on providing weather services based on data from the 
+`Australian Bureau of Meteorology <http://www.bom.gov.au/>`_. 
 
 .. uml:: diagrams/introduction/usecase.puml
-
-TODO: Describe the approach
 
 Problem domain
 ==============
 
-I undertook research into applicable measurements and documented them in :ref:`Observations and their measurement`.
+The use case makes it look rather simple but there's a lot to do to get the service going:
+
+- Creating a searchable list of weather stations
+- Loading observation and forecast data
+- Providing various APIs, functions and sites for the service
+
+Weather data is central to the problem domain and
+I undertook research into applicable measurements and documented them in :ref:`Appendix: Notebooks`.
+
+Approach
+========
+
+It's just me working on the project but I have used the 
+`Agile process <https://dev.azure.com/weatherballoon/Weather Balloon/_boards/board/t/Weather Balloon Team/Features>`_ 
+in Azure DevOps. The DevOps project provides the Agile board and build/release pipelines.
+
+The codebase is in `GitHub <https://github.com/weather-balloon>`_.
+
+I've described the setup etc in the :ref:`Project Setup` section.
 
 Credits
 =======

@@ -4,6 +4,7 @@ Documentation
 
 The documentation you are reading here is created using `Sphinx
 <http://www.sphinx-doc.org/en/master/index.html>`_.
+
 You can access the source code in the `Weather Balloon
 <https://dev.azure.com/weatherballoon/_git/Weather%20Balloon>`_ repo. You'll
 find the guide for building the documentation in the ``README.md`` file.
@@ -19,29 +20,24 @@ know if I've slipped up. I reference the `Sparx Systems UML Tutorial
 Visual Studio Extensions
 ========================
 
+`Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_
+
+    Microsoft's Python extension
+
 `PlantUML <https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml>`_
-    
+
     PlantUML diagram previews and handy file editing features
 
-`Jupyter <https://github.com/DonJayamanne/vscodejupyter/wiki>`_
-    
-    Lets you preview Jupyter notebooks
-
 `reStructuredText <https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`_
-    
+
     Provides RST file handling but I'm struggling to get the preview to work
-
-`Anaconda Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-python.anaconda-extension-pack>`_
-
-    TODO
 
 
 Jupyter Notebooks
 =================
 
-Note that the Jupyter VSCode plugin is useful for viewing previews of a Jupyter
-Notebook but it's easier to work on Notebooks in the browser. Just activate the
-virtual environment and run ``make jupyter`` to start Jupyter.
+Note that VSCode lets you `work with Jupyter Notebooks <https://code.visualstudio.com/docs/python/jupyter-support>`_ 
+but I find it's easier to work on Notebooks in the browser.
 
 I'd suggest installing the `Unofficial Jupyter Notebooks Extensions
 <https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/index.html>`_ as
@@ -52,6 +48,7 @@ the following in your virtual environment::
     jupyter contrib nbextension install --sys-prefix
     jupyter nbextensions_configurator enable --sys-prefix
 
+Just run ``make jupyter`` to start Jupyter.
 
 Deployment
 ==========
@@ -59,5 +56,5 @@ Deployment
 The documentation is deployed to http://www.weatherballoon.info using an Azure
 DevOps pipeline.
 
-.. literalinclude:: ../../azure-pipelines.yml
+.. literalinclude:: ../../../azure-pipelines.yml
     :language: yaml

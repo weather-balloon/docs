@@ -5,19 +5,22 @@ System Setup
 Introduction
 ============
 
-TODO
+I'm working on the various codebases from a Linux Mint PC. Most of
+what I'm using is available across various platforms so you should 
+be able to replicate most of what I'm doing.
 
-I am mainly using a Mac but you should be able to adapt most examples to your
-operating system of choice.
+This section will provide an overview of the general items that you'll
+need. Additional components will be described as needed.
 
 Domain
 ======
 
 I registered the ``weatherballoon.info`` domain for the purposes of hosting
-APIs, sites etc.
+APIs, sites etc. This will be generally provided as a configuration item 
+that you'll need to set based on your own chosen domain.
 
-Azure
-=====
+Azure CLI
+=========
 
 Install the `Azure CLI
 <https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest>`_
@@ -98,13 +101,12 @@ IDE
 ===
 
 I'm using `Microsoft Visual Studio Code <https://code.visualstudio.com/>`_ as my
-code editor. It's at version ``1.27.x`` at the time I write this but the product
-is frequently updated so anything beyond that version should be fine.
+code editor. 
 
 Languages and SDKs
 ==================
 
-Python 3.7+
+Python 3.6+
     `Python Downloads <https://www.python.org/downloads/>`_
 
 .NET Core SDK 2.1+

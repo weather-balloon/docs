@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+sphinx = "*"
+sphinx-autobuild = "*"
+sphinxcontrib-plantuml = "*"
+sphinxcontrib-websupport = "*"
+nbsphinx = "*"
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+doc8 = "*"
+pandas = "*"
+matplotlib = "*"
+requests = "*"
+defusedxml = "*"
+pycountry = "*"
+autopep8 = "*"
+
+[requires]
+python_version = "3.6"

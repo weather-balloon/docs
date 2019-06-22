@@ -8,11 +8,15 @@ control LogicApp_SearchLoader
 control FunctionApp_CsvParser
 boundary AzureSearch
 
+== Get-WeatherStationData ==
+
 Operator --> LogicApp_Loader: Trigger
 LogicApp_Loader -> GeoNames: Request postcode file
 GeoNames -> LogicApp_Loader: Return zip file
 LogicApp_Loader -> LogicApp_Loader: Unzip file
 LogicApp_Loader -> BlobStore: Store CSV file
+
+== Add-WeatherStationData ==
 
 BlobStore --> EventGrid: New item trigger
 EventGrid -> LogicApp_SearchLoader: Trigger

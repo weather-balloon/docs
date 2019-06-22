@@ -47,13 +47,13 @@ Weather station location
     For this work I will use the `BoM's list <ftp://ftp.bom.gov.au/anon2/home/ncc/metadata/sitelists/stations.zip>`_.
 
 
-Loading Weather stations
-========================
+Loading Weather station data
+============================
 
 Design
 ------
 
-.. uml:: diagrams/feature1/weatherstations_seq.puml
+.. uml:: diagrams/epic1/weatherstations_seq.puml
 
 Implementation
 --------------
@@ -70,7 +70,7 @@ Loading Postcodes
 Design
 ------
 
-.. uml:: diagrams/feature1/postcode_seq.puml
+.. uml:: diagrams/epic1/postcode_seq.puml
 
 Implementation
 --------------

@@ -2,8 +2,9 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    = -j4
-SPHINXBUILD   = sphinx-build
-SPHINXAUTOBUILD = sphinx-autobuild
+SPHINXBUILD   = pipenv run sphinx-build
+SPHINXAUTOBUILD = pipenv run sphinx-autobuild
+JUPYTER = pipenv run jupyter
 SPHINXAUTOBUILDOPTS    = -j4 -B -p4444
 SOURCEDIR     = src/docs/
 BUILDDIR      = build/docs/
@@ -15,7 +16,7 @@ help :
 .PHONY: help Makefile 
 
 jupyter :
-	jupyter notebook
+	@$(JUPYTER) notebook
 
 autobuild :
 	@$(SPHINXAUTOBUILD) $(SPHINXAUTOBUILDOPTS) "$(SOURCEDIR)" "$(BUILDDIR)"
