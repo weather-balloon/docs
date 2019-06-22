@@ -31,4 +31,5 @@ publish : clean html epub latexpdf
 
 clean-local :
 	rm -rf _build/
+	rm -rf src/docs/_build
 	
