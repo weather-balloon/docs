@@ -20,6 +20,7 @@ requests = "*"
 defusedxml = "*"
 pycountry = "*"
 autopep8 = "*"
+urllib3 = "*"
 
 [requires]
 python_version = "3.6"
