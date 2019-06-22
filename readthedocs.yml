@@ -4,7 +4,7 @@ formats: all
 python:
   version: 3.6
   install:
-    - requirements: requirements.tx
+    - requirements: requirements.txt
 
 sphinx:
   configuration: conf.py
