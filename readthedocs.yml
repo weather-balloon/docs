@@ -7,4 +7,4 @@ python:
     - requirements: requirements.txt
 
 sphinx:
-  configuration: conf.py
+  configuration: src/docs/conf.py
