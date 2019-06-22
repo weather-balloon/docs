@@ -3,6 +3,8 @@ formats: all
 
 python:
   version: 3.6
+  install:
+    - requirements: requirements.tx
 
 sphinx:
   configuration: conf.py
