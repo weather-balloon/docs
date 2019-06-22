@@ -21,6 +21,7 @@ defusedxml = "*"
 pycountry = "*"
 autopep8 = "*"
 urllib3 = "*"
+sphinx-rtd-theme = "*"
 
 [requires]
 python_version = "3.6"

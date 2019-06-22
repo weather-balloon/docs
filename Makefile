@@ -18,10 +18,13 @@ help :
 jupyter :
 	@$(JUPYTER) notebook
 
+generate_requirements :
+	pipenv lock --requirements > requirements.txt
+
 autobuild :
 	@$(SPHINXAUTOBUILD) $(SPHINXAUTOBUILDOPTS) "$(SOURCEDIR)" "$(BUILDDIR)"
 
-publish : clean html epub latexpdf
+publish : clean generate_requirements html epub latexpdf
 	@$(SPHINXBUILD)  -b html epub latexpdf -a "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
