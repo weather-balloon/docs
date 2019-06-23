@@ -2,8 +2,6 @@
 Feature 1: Locate a weather station
 ***********************************
 
-.. contents::
-
 Introduction
 ============
 

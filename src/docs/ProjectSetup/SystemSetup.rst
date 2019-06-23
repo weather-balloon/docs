@@ -101,7 +101,14 @@ IDE
 ===
 
 I'm using `Microsoft Visual Studio Code <https://code.visualstudio.com/>`_ as my
-code editor. 
+code editor. As a starter you should install the following Microsoft extensions:
+
+- C#
+- Python
+- Azure Tools
+- Azure Logic Apps
+- Azure Application Insights
+- Azure Event Grid
 
 Languages and SDKs
 ==================
@@ -109,40 +116,17 @@ Languages and SDKs
 Python 3.6+
     `Python Downloads <https://www.python.org/downloads/>`_
 
-.NET Core SDK 2.1+
+.NET Core SDK 2.2+
     `.NET Core SDK <https://www.microsoft.com/net/download>`_
 
 Node.js 10+ (includes ``npm``)
     `Node Downloads <https://nodejs.org/en/download/current/>`_
 
-Package Managers
-----------------
-
-You're likely to find that your platform's package manager gives you a
-straight-forward way to do most of this. I use `Homebrew <https://brew.sh/>`_ on
-my OS X system. 
-
-I have started to use `Anaconda <https://www.anaconda.com/download/>`_ more over recent months as it makes life a little
-easier, especially when swapping between different operating system platforms. I
-keep Homebrew for those packages not supported by Anaconda - just make sure your
-``PATH`` variable is set to find the binaries in the correct order (usually
-Anaconda first).
-
-
-
-Java
-----
-
-Java
-    `Java Downloads <https://www.java.com/en/download/manual.jsp>`_
-
-For those needing Java on OSX, I can recommend the `SDKMAN
-<https://sdkman.io/>`_ tool - it makes it very easy to work with a variety of
-Java tools.
-
 
 Tools
 =====
+
+You'll likely want Git - but you have that already right?
 
 * `Azure Storage Explorer <https://azure.microsoft.com/en-au/features/storage-explorer/>`_
 

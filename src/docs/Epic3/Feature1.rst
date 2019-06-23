@@ -1,15 +1,13 @@
 ***********************************
-Feature 2: Locate a forecast region
+Feature 1: Locate a forecast region
 ***********************************
-
-.. contents::
 
 Introduction
 ============
 
 The feature is described as follows:
 
-    Feature 2: As a user I want to find my forecast region so that I can get
+    Feature 1: As a user I want to find my forecast region so that I can get
     the weather forecast for my local area
 
 

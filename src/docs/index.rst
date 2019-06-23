@@ -9,6 +9,9 @@ Weather Balloon documentation
     Introduction
     ProjectSetup
     Epic1
+    Epic2
+    Epic3
+    Epic4
     Notebooks
 
 Indices and tables
